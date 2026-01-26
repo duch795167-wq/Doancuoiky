@@ -34,6 +34,8 @@
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
+            label3 = new Label();
+            label2 = new Label();
             label1 = new Label();
             btnLAN = new Button();
             txtIP = new TextBox();
@@ -46,6 +48,7 @@
             newGameToolStripMenuItem = new ToolStripMenuItem();
             quitToolStripMenuItem = new ToolStripMenuItem();
             txtStatus = new TextBox();
+            label4 = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
@@ -57,7 +60,7 @@
             // 
             pnl_chessBoard.BackColor = SystemColors.Control;
             pnl_chessBoard.Location = new Point(10, 40);
-            pnl_chessBoard.Margin = new Padding(2);
+            pnl_chessBoard.Margin = new Padding(3, 2, 3, 2);
             pnl_chessBoard.Name = "pnl_chessBoard";
             pnl_chessBoard.Size = new Size(623, 696);
             pnl_chessBoard.TabIndex = 0;
@@ -66,22 +69,21 @@
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(639, 40);
-            panel2.Margin = new Padding(2);
+            panel2.Location = new Point(640, 40);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(236, 253);
+            panel2.Size = new Size(235, 253);
             panel2.TabIndex = 1;
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox1.BackColor = SystemColors.AppWorkspace;
-            pictureBox1.BackgroundImage = Properties.Resources.back_caro;
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(4, 3);
-            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Image = Properties.Resources.back_caro;
+            pictureBox1.Location = new Point(4, 4);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(227, 246);
+            pictureBox1.Size = new Size(228, 246);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -89,24 +91,45 @@
             // panel3
             // 
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel3.Controls.Add(label3);
+            panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
             panel3.Controls.Add(btnLAN);
             panel3.Controls.Add(txtIP);
             panel3.Controls.Add(img_Player);
             panel3.Controls.Add(prcb_CoolDown);
             panel3.Controls.Add(txt_PlayerName);
-            panel3.Location = new Point(639, 298);
-            panel3.Margin = new Padding(2);
+            panel3.Location = new Point(640, 298);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(236, 228);
+            panel3.Size = new Size(235, 229);
             panel3.TabIndex = 2;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 9F);
+            label3.Location = new Point(162, 18);
+            label3.Name = "label3";
+            label3.Size = new Size(48, 15);
+            label3.TabIndex = 7;
+            label3.Text = "Kí hiệu ";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 18);
+            label2.Name = "label2";
+            label2.Size = new Size(93, 15);
+            label2.TabIndex = 6;
+            label2.Text = "Lượt đang đánh";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Elephant", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(26, 166);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(36, 191);
             label1.Name = "label1";
             label1.Size = new Size(174, 29);
             label1.TabIndex = 5;
@@ -114,19 +137,19 @@
             // 
             // btnLAN
             // 
-            btnLAN.Location = new Point(4, 118);
-            btnLAN.Margin = new Padding(2);
+            btnLAN.Location = new Point(4, 158);
+            btnLAN.Margin = new Padding(3, 2, 3, 2);
             btnLAN.Name = "btnLAN";
             btnLAN.Size = new Size(122, 22);
             btnLAN.TabIndex = 4;
-            btnLAN.Text = "LAN";
+            btnLAN.Text = "Ket noi";
             btnLAN.UseVisualStyleBackColor = true;
             btnLAN.Click += btnLAN_Click;
             // 
             // txtIP
             // 
-            txtIP.Location = new Point(4, 78);
-            txtIP.Margin = new Padding(2);
+            txtIP.Location = new Point(4, 134);
+            txtIP.Margin = new Padding(3, 2, 3, 2);
             txtIP.Name = "txtIP";
             txtIP.Size = new Size(123, 23);
             txtIP.TabIndex = 3;
@@ -135,8 +158,8 @@
             // img_Player
             // 
             img_Player.BackColor = SystemColors.Control;
-            img_Player.Location = new Point(131, 3);
-            img_Player.Margin = new Padding(2);
+            img_Player.Location = new Point(131, 45);
+            img_Player.Margin = new Padding(3, 2, 3, 2);
             img_Player.Name = "img_Player";
             img_Player.Size = new Size(102, 135);
             img_Player.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -145,20 +168,21 @@
             // 
             // prcb_CoolDown
             // 
-            prcb_CoolDown.Location = new Point(4, 42);
-            prcb_CoolDown.Margin = new Padding(2);
+            prcb_CoolDown.Location = new Point(3, 78);
+            prcb_CoolDown.Margin = new Padding(3, 2, 3, 2);
             prcb_CoolDown.Name = "prcb_CoolDown";
-            prcb_CoolDown.Size = new Size(122, 22);
+            prcb_CoolDown.Size = new Size(122, 41);
             prcb_CoolDown.TabIndex = 1;
             // 
             // txt_PlayerName
             // 
-            txt_PlayerName.Location = new Point(4, 3);
-            txt_PlayerName.Margin = new Padding(2);
+            txt_PlayerName.Location = new Point(4, 45);
+            txt_PlayerName.Margin = new Padding(3, 2, 3, 2);
             txt_PlayerName.Name = "txt_PlayerName";
             txt_PlayerName.ReadOnly = true;
             txt_PlayerName.Size = new Size(123, 23);
             txt_PlayerName.TabIndex = 0;
+            txt_PlayerName.Text = "Player";
             // 
             // tm_CountDown
             // 
@@ -170,8 +194,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { menu });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(5, 2, 0, 2);
-            menuStrip1.Size = new Size(880, 24);
+            menuStrip1.Padding = new Padding(4, 2, 0, 2);
+            menuStrip1.Size = new Size(879, 24);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -198,18 +222,30 @@
             // 
             // txtStatus
             // 
-            txtStatus.Location = new Point(643, 541);
-            txtStatus.Margin = new Padding(2);
+            txtStatus.Location = new Point(654, 571);
+            txtStatus.Margin = new Padding(3, 2, 3, 2);
             txtStatus.Multiline = true;
             txtStatus.Name = "txtStatus";
-            txtStatus.Size = new Size(209, 152);
+            txtStatus.ReadOnly = true;
+            txtStatus.Size = new Size(210, 152);
             txtStatus.TabIndex = 4;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 10F);
+            label4.Location = new Point(722, 550);
+            label4.Name = "label4";
+            label4.Size = new Size(77, 17);
+            label4.TabIndex = 5;
+            label4.Text = "Trạng thái ";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(880, 747);
+            ClientSize = new Size(879, 746);
+            Controls.Add(label4);
             Controls.Add(txtStatus);
             Controls.Add(panel3);
             Controls.Add(panel2);
@@ -217,7 +253,7 @@
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(2);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Caro_game";
             FormClosing += Form1_FormClosing;
@@ -251,6 +287,9 @@
         private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
         private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }
 
