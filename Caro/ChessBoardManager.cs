@@ -44,5 +44,42 @@ namespace Caro
             get { return playerMark; }
             set { playerMark = value; }
         }
+
+        private List<List<Button>> matrix;
+        public List<List<Button>> Matrix
+        {
+            get { return matrix; }
+            set { matrix = value; }
+        }
+
+        private event EventHandler playerMarked;
+        public event EventHandler PlayerMarked
+        {
+            add
+            {
+                playerMarked += value;
+            }
+            remove
+            {
+                playerMarked -= value;
+            }
+        }
+
+        private event EventHandler endedGame;
+        public event EventHandler EndedGame
+        {
+            add
+            {
+                endedGame += value;
+            }
+            remove
+            {
+                endedGame -= value;
+            }
+        }
+
+        public event Action<int, int> PlayerMoved;
+
+        #endregion
     }
 }
