@@ -23,5 +23,10 @@ namespace Caro
             get { return mark; }
             set { mark = value; }
         }
+        public Player(string name, Image mark)
+        {
+            this.Name = name;
+            this.Mark = mark;
+        }
     }
 }
