@@ -146,10 +146,40 @@ namespace Caro_Server
         }
 
 
+            static void Send(TcpClient client, string msg)
+        {
+            byte[] data = Encoding.UTF8.GetBytes(msg);
+            client.GetStream().Write(data, 0, data.Length);
+        }
 
+        static string Receive(NetworkStream stream)
+        {
+            try
+            {
+                byte[] buffer = new byte[1024];
+                int bytes = stream.Read(buffer, 0, buffer.Length);
+                if (bytes <= 0) return null;
+                return Encoding.UTF8.GetString(buffer, 0, bytes);
+            }
+
+            catch
+            {
+                return null;
+            }
+            
+        }
+
+
+        static string RoomName()
+        {
+            Random rd = new Random();
+
+            return "CARO-" + rd.Next(1000, 9999);
+        }
 
 
 
 
     }
 }
+
