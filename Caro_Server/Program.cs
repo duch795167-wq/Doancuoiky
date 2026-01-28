@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Net.Sockets;
+using System.Text;
 
 namespace Caro_Server
 {
@@ -158,13 +159,13 @@ namespace Caro_Server
             {
                 byte[] buffer = new byte[1024];
                 int bytes = stream.Read(buffer, 0, buffer.Length);
-                if (bytes <= 0) return null;
+                if (bytes <= 0) return null!;
                 return Encoding.UTF8.GetString(buffer, 0, bytes);
             }
 
             catch
             {
-                return null;
+                return null!;
             }
             
         }

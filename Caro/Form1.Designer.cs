@@ -28,279 +28,374 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pnl_chessBoard = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.img_Player = new System.Windows.Forms.PictureBox();
-            this.prcb_CoolDown = new System.Windows.Forms.ProgressBar();
-            this.txt_PlayerName = new System.Windows.Forms.TextBox();
-            this.tm_CountDown = new System.Windows.Forms.Timer(this.components);
-            this.txtStatus = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblRoomName = new System.Windows.Forms.Label();
-            this.btnLAN = new Guna.UI2.WinForms.Guna2Button();
-            this.txtRoomName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mnMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnNewGame = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnQuit = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_Player)).BeginInit();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            pnl_chessBoard = new Panel();
+            panel2 = new Panel();
+            pictureBox1 = new PictureBox();
+            panel3 = new Panel();
+            label3 = new Label();
+            label2 = new Label();
+            img_Player = new PictureBox();
+            prcb_CoolDown = new ProgressBar();
+            txt_PlayerName = new TextBox();
+            tm_CountDown = new System.Windows.Forms.Timer(components);
+            label4 = new Label();
+            lblRoomName = new Label();
+            btnLAN = new Guna.UI2.WinForms.Guna2Button();
+            txtRoomName = new Guna.UI2.WinForms.Guna2TextBox();
+            menuStrip1 = new MenuStrip();
+            mnMenu = new ToolStripMenuItem();
+            mnNewGame = new ToolStripMenuItem();
+            mnQuit = new ToolStripMenuItem();
+            txtChatInput = new TextBox();
+            btnSendChat = new Guna.UI2.WinForms.Guna2Button();
+            txtChat = new Guna.UI2.WinForms.Guna2TextBox();
+            txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)img_Player).BeginInit();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // pnl_chessBoard
             // 
-            this.pnl_chessBoard.BackColor = System.Drawing.SystemColors.Control;
-            this.pnl_chessBoard.Location = new System.Drawing.Point(11, 72);
-            this.pnl_chessBoard.Margin = new System.Windows.Forms.Padding(2);
-            this.pnl_chessBoard.Name = "pnl_chessBoard";
-            this.pnl_chessBoard.Size = new System.Drawing.Size(480, 510);
-            this.pnl_chessBoard.TabIndex = 0;
+            pnl_chessBoard.BackColor = Color.Transparent;
+            pnl_chessBoard.Location = new Point(13, 107);
+            pnl_chessBoard.Margin = new Padding(2);
+            pnl_chessBoard.Name = "pnl_chessBoard";
+            pnl_chessBoard.Size = new Size(560, 588);
+            pnl_chessBoard.TabIndex = 0;
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(777, 75);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(202, 219);
-            this.panel2.TabIndex = 1;
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel2.Controls.Add(pictureBox1);
+            panel2.Location = new Point(906, 69);
+            panel2.Margin = new Padding(2);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(236, 253);
+            panel2.TabIndex = 1;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox1.BackgroundImage = global::Caro.Properties.Resources.back_caro;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(195, 213);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox1.BackColor = SystemColors.AppWorkspace;
+            pictureBox1.BackgroundImage = Properties.Resources.back_caro;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(2, 2);
+            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(227, 246);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.img_Player);
-            this.panel3.Controls.Add(this.prcb_CoolDown);
-            this.panel3.Controls.Add(this.txt_PlayerName);
-            this.panel3.Location = new System.Drawing.Point(777, 298);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(202, 261);
-            this.panel3.TabIndex = 2;
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel3.Controls.Add(label3);
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(img_Player);
+            panel3.Controls.Add(prcb_CoolDown);
+            panel3.Controls.Add(txt_PlayerName);
+            panel3.Location = new Point(906, 344);
+            panel3.Margin = new Padding(2);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(236, 301);
+            panel3.TabIndex = 2;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(79, 112);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Kí hiệu ";
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 12F);
+            label3.Location = new Point(92, 129);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(60, 20);
+            label3.TabIndex = 7;
+            label3.Text = "Kí hiệu ";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(42, 8);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Lượt đang đánh";
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 12F);
+            label2.Location = new Point(49, 9);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(121, 20);
+            label2.TabIndex = 6;
+            label2.Text = "Lượt đang đánh";
             // 
             // img_Player
             // 
-            this.img_Player.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.img_Player.Location = new System.Drawing.Point(55, 134);
-            this.img_Player.Margin = new System.Windows.Forms.Padding(2);
-            this.img_Player.Name = "img_Player";
-            this.img_Player.Size = new System.Drawing.Size(100, 100);
-            this.img_Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img_Player.TabIndex = 2;
-            this.img_Player.TabStop = false;
+            img_Player.BackColor = SystemColors.ButtonHighlight;
+            img_Player.Location = new Point(64, 155);
+            img_Player.Margin = new Padding(2);
+            img_Player.Name = "img_Player";
+            img_Player.Size = new Size(117, 115);
+            img_Player.SizeMode = PictureBoxSizeMode.StretchImage;
+            img_Player.TabIndex = 2;
+            img_Player.TabStop = false;
             // 
             // prcb_CoolDown
             // 
-            this.prcb_CoolDown.Location = new System.Drawing.Point(2, 74);
-            this.prcb_CoolDown.Margin = new System.Windows.Forms.Padding(2);
-            this.prcb_CoolDown.Name = "prcb_CoolDown";
-            this.prcb_CoolDown.Size = new System.Drawing.Size(195, 36);
-            this.prcb_CoolDown.TabIndex = 1;
+            prcb_CoolDown.Location = new Point(2, 85);
+            prcb_CoolDown.Margin = new Padding(2);
+            prcb_CoolDown.Name = "prcb_CoolDown";
+            prcb_CoolDown.Size = new Size(227, 42);
+            prcb_CoolDown.TabIndex = 1;
             // 
             // txt_PlayerName
             // 
-            this.txt_PlayerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txt_PlayerName.Location = new System.Drawing.Point(62, 30);
-            this.txt_PlayerName.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_PlayerName.Name = "txt_PlayerName";
-            this.txt_PlayerName.ReadOnly = true;
-            this.txt_PlayerName.Size = new System.Drawing.Size(80, 29);
-            this.txt_PlayerName.TabIndex = 0;
-            this.txt_PlayerName.Text = "Player";
-            this.txt_PlayerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            txt_PlayerName.Font = new Font("Microsoft Sans Serif", 14F);
+            txt_PlayerName.Location = new Point(72, 35);
+            txt_PlayerName.Margin = new Padding(2);
+            txt_PlayerName.Name = "txt_PlayerName";
+            txt_PlayerName.ReadOnly = true;
+            txt_PlayerName.Size = new Size(93, 29);
+            txt_PlayerName.TabIndex = 0;
+            txt_PlayerName.Text = "Player";
+            txt_PlayerName.TextAlign = HorizontalAlignment.Center;
             // 
             // tm_CountDown
             // 
-            this.tm_CountDown.Tick += new System.EventHandler(this.tm_CountDown_Tick);
-            // 
-            // txtStatus
-            // 
-            this.txtStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtStatus.Location = new System.Drawing.Point(542, 99);
-            this.txtStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.txtStatus.Multiline = true;
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.ReadOnly = true;
-            this.txtStatus.Size = new System.Drawing.Size(194, 216);
-            this.txtStatus.TabIndex = 4;
+            tm_CountDown.Tick += tm_CountDown_Tick;
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label4.Location = new System.Drawing.Point(587, 72);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Thông báo";
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 15F);
+            label4.Location = new Point(692, 46);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(107, 25);
+            label4.TabIndex = 5;
+            label4.Text = "Thông báo";
             // 
             // lblRoomName
             // 
-            this.lblRoomName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblRoomName.AutoSize = true;
-            this.lblRoomName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblRoomName.Location = new System.Drawing.Point(629, 24);
-            this.lblRoomName.Name = "lblRoomName";
-            this.lblRoomName.Size = new System.Drawing.Size(107, 25);
-            this.lblRoomName.TabIndex = 6;
-            this.lblRoomName.Text = "Tên phòng";
-            this.lblRoomName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            lblRoomName.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblRoomName.AutoSize = true;
+            lblRoomName.Font = new Font("Microsoft Sans Serif", 15F);
+            lblRoomName.Location = new Point(238, 28);
+            lblRoomName.Margin = new Padding(4, 0, 4, 0);
+            lblRoomName.Name = "lblRoomName";
+            lblRoomName.Size = new Size(107, 25);
+            lblRoomName.TabIndex = 6;
+            lblRoomName.Text = "Tên phòng";
+            lblRoomName.TextAlign = ContentAlignment.TopCenter;
             // 
             // btnLAN
             // 
-            this.btnLAN.BorderRadius = 10;
-            this.btnLAN.BorderThickness = 1;
-            this.btnLAN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLAN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLAN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLAN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLAN.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLAN.ForeColor = System.Drawing.Color.White;
-            this.btnLAN.Location = new System.Drawing.Point(573, 341);
-            this.btnLAN.Name = "btnLAN";
-            this.btnLAN.Size = new System.Drawing.Size(143, 50);
-            this.btnLAN.TabIndex = 9;
-            this.btnLAN.Text = "Tạo phòng";
-            this.btnLAN.Click += new System.EventHandler(this.btnLAN_Click);
+            btnLAN.BackColor = Color.FromArgb(255, 224, 192);
+            btnLAN.BorderRadius = 10;
+            btnLAN.BorderThickness = 1;
+            btnLAN.CustomizableEdges = customizableEdges1;
+            btnLAN.DisabledState.BorderColor = Color.DarkGray;
+            btnLAN.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnLAN.DisabledState.FillColor = Color.DarkGray;
+            btnLAN.DisabledState.ForeColor = Color.Black;
+            btnLAN.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLAN.ForeColor = SystemColors.Window;
+            btnLAN.Location = new Point(664, 328);
+            btnLAN.Margin = new Padding(4, 3, 4, 3);
+            btnLAN.Name = "btnLAN";
+            btnLAN.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnLAN.Size = new Size(167, 51);
+            btnLAN.TabIndex = 9;
+            btnLAN.Text = "Tạo phòng";
+            btnLAN.Click += btnLAN_Click;
             // 
             // txtRoomName
             // 
-            this.txtRoomName.BorderRadius = 10;
-            this.txtRoomName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRoomName.DefaultText = "";
-            this.txtRoomName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtRoomName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtRoomName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRoomName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRoomName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRoomName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtRoomName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRoomName.Location = new System.Drawing.Point(777, 24);
-            this.txtRoomName.Name = "txtRoomName";
-            this.txtRoomName.PlaceholderText = "";
-            this.txtRoomName.SelectedText = "";
-            this.txtRoomName.Size = new System.Drawing.Size(200, 36);
-            this.txtRoomName.TabIndex = 10;
+            txtRoomName.BorderRadius = 10;
+            txtRoomName.Cursor = Cursors.IBeam;
+            txtRoomName.CustomizableEdges = customizableEdges3;
+            txtRoomName.DefaultText = "";
+            txtRoomName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtRoomName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtRoomName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtRoomName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtRoomName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtRoomName.Font = new Font("Segoe UI", 9F);
+            txtRoomName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtRoomName.Location = new Point(180, 60);
+            txtRoomName.Margin = new Padding(4, 3, 4, 3);
+            txtRoomName.Name = "txtRoomName";
+            txtRoomName.PlaceholderText = "";
+            txtRoomName.ReadOnly = true;
+            txtRoomName.SelectedText = "";
+            txtRoomName.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtRoomName.Size = new Size(233, 42);
+            txtRoomName.TabIndex = 10;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.AllowMerge = false;
-            this.menuStrip1.BackColor = System.Drawing.Color.Silver;
-            this.menuStrip1.BackgroundImage = global::Caro.Properties.Resources.background_san_go11;
-            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnMenu});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(979, 24);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.AllowMerge = false;
+            menuStrip1.BackColor = Color.Silver;
+            menuStrip1.BackgroundImage = Properties.Resources.background_san_go11;
+            menuStrip1.BackgroundImageLayout = ImageLayout.Stretch;
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mnMenu });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Padding = new Padding(5, 2, 0, 2);
+            menuStrip1.Size = new Size(1142, 24);
+            menuStrip1.TabIndex = 3;
+            menuStrip1.Text = "menuStrip1";
             // 
             // mnMenu
             // 
-            this.mnMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnNewGame,
-            this.mnQuit});
-            this.mnMenu.Name = "mnMenu";
-            this.mnMenu.Size = new System.Drawing.Size(50, 20);
-            this.mnMenu.Text = "Menu";
+            mnMenu.DropDownItems.AddRange(new ToolStripItem[] { mnNewGame, mnQuit });
+            mnMenu.Name = "mnMenu";
+            mnMenu.Size = new Size(50, 20);
+            mnMenu.Text = "Menu";
             // 
             // mnNewGame
             // 
-            this.mnNewGame.Name = "mnNewGame";
-            this.mnNewGame.Size = new System.Drawing.Size(180, 22);
-            this.mnNewGame.Text = "New Game";
-            this.mnNewGame.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
+            mnNewGame.Name = "mnNewGame";
+            mnNewGame.Size = new Size(132, 22);
+            mnNewGame.Text = "New Game";
+            mnNewGame.Click += newGameToolStripMenuItem_Click;
             // 
             // mnQuit
             // 
-            this.mnQuit.Name = "mnQuit";
-            this.mnQuit.Size = new System.Drawing.Size(180, 22);
-            this.mnQuit.Text = "Quit";
-            this.mnQuit.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
+            mnQuit.Name = "mnQuit";
+            mnQuit.Size = new Size(132, 22);
+            mnQuit.Text = "Quit";
+            mnQuit.Click += quitToolStripMenuItem_Click;
+            // 
+            // txtChatInput
+            // 
+            txtChatInput.Font = new Font("Microsoft Sans Serif", 15F);
+            txtChatInput.Location = new Point(632, 658);
+            txtChatInput.Margin = new Padding(4, 3, 4, 3);
+            txtChatInput.Name = "txtChatInput";
+            txtChatInput.Size = new Size(167, 30);
+            txtChatInput.TabIndex = 12;
+            // 
+            // btnSendChat
+            // 
+            btnSendChat.BorderColor = Color.DarkBlue;
+            btnSendChat.BorderRadius = 10;
+            btnSendChat.BorderThickness = 1;
+            btnSendChat.CustomizableEdges = customizableEdges5;
+            btnSendChat.DisabledState.BorderColor = Color.DarkGray;
+            btnSendChat.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSendChat.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSendChat.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSendChat.Font = new Font("Times New Roman", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSendChat.ForeColor = Color.White;
+            btnSendChat.Location = new Point(807, 653);
+            btnSendChat.Margin = new Padding(4, 3, 4, 3);
+            btnSendChat.Name = "btnSendChat";
+            btnSendChat.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnSendChat.Size = new Size(80, 35);
+            btnSendChat.TabIndex = 13;
+            btnSendChat.Text = "Gửi";
+            btnSendChat.Click += btnSendChat_Click;
+            // 
+            // txtChat
+            // 
+            txtChat.BorderColor = Color.FromArgb(128, 128, 255);
+            txtChat.BorderRadius = 14;
+            txtChat.BorderThickness = 2;
+            txtChat.CustomizableEdges = customizableEdges7;
+            txtChat.DefaultText = "";
+            txtChat.DisabledState.BorderColor = Color.White;
+            txtChat.DisabledState.FillColor = Color.White;
+            txtChat.DisabledState.ForeColor = Color.DarkGray;
+            txtChat.DisabledState.PlaceholderForeColor = Color.DarkGray;
+            txtChat.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtChat.Font = new Font("Segoe UI", 9F);
+            txtChat.ForeColor = Color.Black;
+            txtChat.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtChat.Location = new Point(632, 385);
+            txtChat.Multiline = true;
+            txtChat.Name = "txtChat";
+            txtChat.PlaceholderText = "";
+            txtChat.ReadOnly = true;
+            txtChat.ScrollBars = ScrollBars.Both;
+            txtChat.SelectedText = "";
+            txtChat.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtChat.Size = new Size(226, 243);
+            txtChat.TabIndex = 14;
+            // 
+            // txtStatus
+            // 
+            txtStatus.BackColor = Color.FromArgb(243, 230, 216);
+            txtStatus.BorderColor = Color.Lime;
+            txtStatus.BorderRadius = 14;
+            txtStatus.BorderThickness = 2;
+            txtStatus.CustomizableEdges = customizableEdges9;
+            txtStatus.DefaultText = "";
+            txtStatus.DisabledState.BorderColor = Color.DarkGray;
+            txtStatus.DisabledState.FillColor = Color.DarkGray;
+            txtStatus.DisabledState.ForeColor = Color.DarkGray;
+            txtStatus.DisabledState.PlaceholderForeColor = Color.DarkGray;
+            txtStatus.FillColor = Color.WhiteSmoke;
+            txtStatus.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtStatus.Font = new Font("Segoe UI", 9F);
+            txtStatus.ForeColor = Color.Black;
+            txtStatus.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtStatus.Location = new Point(632, 74);
+            txtStatus.Multiline = true;
+            txtStatus.Name = "txtStatus";
+            txtStatus.PlaceholderForeColor = Color.PeachPuff;
+            txtStatus.PlaceholderText = "";
+            txtStatus.ReadOnly = true;
+            txtStatus.SelectedText = "";
+            txtStatus.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtStatus.Size = new Size(226, 243);
+            txtStatus.TabIndex = 15;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(230)))), ((int)(((byte)(216)))));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(979, 635);
-            this.Controls.Add(this.txtRoomName);
-            this.Controls.Add(this.btnLAN);
-            this.Controls.Add(this.lblRoomName);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtStatus);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pnl_chessBoard);
-            this.Controls.Add(this.menuStrip1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
-            this.Text = "Caro_game";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_Player)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(243, 230, 216);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1142, 773);
+            Controls.Add(txtStatus);
+            Controls.Add(txtChat);
+            Controls.Add(btnSendChat);
+            Controls.Add(txtChatInput);
+            Controls.Add(txtRoomName);
+            Controls.Add(btnLAN);
+            Controls.Add(lblRoomName);
+            Controls.Add(label4);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(pnl_chessBoard);
+            Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
+            Margin = new Padding(2);
+            Name = "Form1";
+            Text = "Caro_game";
+            FormClosing += Form1_FormClosing;
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)img_Player).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -318,13 +413,17 @@
         private System.Windows.Forms.ToolStripMenuItem mnMenu;
         private System.Windows.Forms.ToolStripMenuItem mnNewGame;
         private System.Windows.Forms.ToolStripMenuItem mnQuit;
-        private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblRoomName;
         private Guna.UI2.WinForms.Guna2Button btnLAN;
         private Guna.UI2.WinForms.Guna2TextBox txtRoomName;
+        
+        private System.Windows.Forms.TextBox txtChatInput;
+        private Guna.UI2.WinForms.Guna2Button btnSendChat;
+        private Guna.UI2.WinForms.Guna2TextBox txtChat;
+        private Guna.UI2.WinForms.Guna2TextBox txtStatus;
     }
 }
 
