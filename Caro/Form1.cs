@@ -83,7 +83,88 @@ namespace Caro
 
         }
 
+        #region SendMethod
 
+        void SendMove(int x, int y)
+        {
+            try
+            {
+                string msg = $"MOVE|{x}|{y}\n";
+                byte[] data = Encoding.UTF8.GetBytes(msg);
+                stream.Write(data, 0, data.Length);
+
+                myTurn = false;
+                tm_CountDown.Stop();
+                pnl_chessBoard.Enabled = false;
+                prcb_CoolDown.Enabled = false;
+                prcb_CoolDown.Value = 0;
+
+
+            }
+            catch
+            {
+                MessageBox.Show("L?i g?i n??c ?i");
+            }
+        }
+
+        void SendTimeOut()
+        {
+            try
+            {
+                string msg = "TIMEOUT\n";
+                byte[] data = Encoding.UTF8.GetBytes(msg);
+                stream.Write(data, 0, data.Length);
+
+
+            }
+            catch
+            {
+                MessageBox.Show("L?i end game");
+            }
+        }
+        void SendEnd()
+        {
+            try
+            {
+                string msg = "ENDGAME\n";
+                byte[] data = Encoding.UTF8.GetBytes(msg);
+                stream.Write(data, 0, data.Length);
+
+            }
+            catch
+            {
+                MessageBox.Show("L?i end game");
+            }
+        }
+        void SendOut()
+        {
+            try
+            {
+                string msg = "OUT\n";
+                if (stream == null) return;
+
+                byte[] data = Encoding.UTF8.GetBytes(msg);
+                stream.Write(data, 0, data.Length);
+            }
+            catch { }
+        }
+
+        void SendChat(string msg)
+        {
+            try
+            {
+
+                if (stream == null) return;
+
+                byte[] data = Encoding.UTF8.GetBytes(msg);
+                stream.Write(data, 0, data.Length);
+            }
+            catch { }
+        }
+
+
+
+        #endregion
 
 
     }
