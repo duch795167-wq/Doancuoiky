@@ -20,10 +20,35 @@ namespace Caro
     {
         #region Properties 
 
-        #endregion
+        ChessBoardManager ChessBoard;
+        TcpClient client;
+        NetworkStream stream;
+        Thread receiveThread;
+        bool myTurn = false;
+        bool isO = false;
+        int newgame = 0;
+        int newChat = 0;
+
+
+        #endregion 
         public Form1()
         {
             InitializeComponent();
+            ChessBoard = new ChessBoardManager(pnl_chessBoard, txt_PlayerName, img_Player);
+
+            ChessBoard.EndedGame += ChessBoard_EndedGame;
+            ChessBoard.PlayerMarked += ChessBoard_PlayerMarked;
+            ChessBoard.PlayerMoved += ChessBoard_PlayerMoved;
+
+            prcb_CoolDown.Step = Cons.COOL_DOWN_STEP;
+            prcb_CoolDown.Maximum = Cons.COOL_DOWN_TIME;
+            prcb_CoolDown.Value = 0;
+            tm_CountDown.Interval = Cons.COOL_DOWN_INTERVAL;
+            newgame = 1;
+            btnLAN.DisabledState.FillColor = Color.White;
+
+
+            NewGame(newgame);
 
         }
 
@@ -55,6 +80,7 @@ namespace Caro
 
         private void btnLAN_Click(object sender, EventArgs e)
         {
+
         }
 
 
