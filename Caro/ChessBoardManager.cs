@@ -88,20 +88,21 @@ namespace Caro
 
         #endregion
 
-       
+
 
 
         #region Initialize
-
+        
         public ChessBoardManager(Panel chessBoard, TextBox playerName, PictureBox mark)
         {
+            string basePath = Application.StartupPath;
             this.ChessBoard = chessBoard;
             this.PlayerName = playerName;
             this.PlayerMark = mark;
             Player = new List<Player>()
             {
-                new Player("Player1",Image.FromFile("D:\\Laptrinhmang\\Caro\\Caro\\Resources\\o.png")),
-                new Player("Player2",Image.FromFile("D:\\Laptrinhmang\\Caro\\Caro\\Resources\\x.png")),
+                new Player("Player1",Properties.Resources.o),
+                new Player("Player2",Properties.Resources.x),
 
 
             };
